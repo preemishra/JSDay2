@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>String and Array Methods in JS</h2>
+
+<p id="m1"></p>
+<p id="m2"></p>
+<p id="m3"></p>
+<p id="m41"></p>
+<p id="m42"></p>
+<p id="m43"></p>
+<p id="m5"></p>
+<p id="m6"></p>
+<p id="m71"></p>
+<p id="m72"></p>
+<p id="m73"></p>
+<p id="m74"></p>
+<p id="m8"></p>
+<p id="m9"></p>
+<p id="m10"></p>
+<p id="m11"></p>
+<p id="m12"></p>
+<p id="m13"></p>
+<p id="m14"></p>
+
+<script>
+//method 1  :   length
+var name = "Preeti";
+document.getElementById("m1").innerHTML = "Length of " + name + " is: " + name.length;
+
+//method 2  :   indexOf()
+var str = "I am learning JS from let's upgrade. Let's upgrade is best!";
+document.getElementById("m2").innerHTML = "First occurrence of 'upgarde' is at : " + str.indexOf("upgrade");
+
+//method 3  :   lastIndexOf() ......search at position
+var str = "Preeti Mishra";
+document.getElementById("m3").innerHTML = "lastIndexOf() demo : " + str.lastIndexOf("t",12);
+
+//method 4  :   slice()
+var str = "Priti, Ashish, Dipti, Madhav";
+document.getElementById("m41").innerHTML = "slice() demo1 : " + str.slice(6);
+document.getElementById("m42").innerHTML = "slice() demo2 : " + str.slice(6,15);
+document.getElementById("m43").innerHTML = "slice() demo3 : " + str.slice(-7);
+
+//method 5  :   substring()
+var str = "Priti, Ashish, Dipti, Madhav";
+//it will not accept negative index
+document.getElementById("m5").innerHTML = "substring demo : " + str.substring(7, 13);
+
+//method 6  :   substr()
+var str = "Priti, Ashish, Dipti, Madhav";
+//after index part...this will omit the rest  
+document.getElementById("m6").innerHTML = "substr() demo1 : " + str.substr(6);
+
+//method 7  :   replace()
+var str = "Priti, Ashish, Dipti, Madhav";  
+document.getElementById("m71").innerHTML = "replace() demo1 : " + str.replace("Priti","Kriti");
+document.getElementById("m72").innerHTML = "replace() demo2 : " + str.replace(/ashish/i,"Mishra");
+var txt = "Priti is good programmmer. She do good things!";
+document.getElementById("m73").innerHTML = "replace() demo3 : " + txt.replace(/good/g,"crazy");
+
+//method 8  :   toLowerCase()
+var str = "PREETI";
+document.getElementById("m8").innerHTML = "toLowerCase() demo : " + str.toLowerCase();
+
+//method 9  :   toUpperCase()
+var str = "Preeti";
+document.getElementById("m9").innerHTML = "toUpperCase() demo : " + str.toUpperCase();
+
+//method 10  :   concat()
+var str1 = "Preeti";
+var str2 = "Mishra"
+document.getElementById("m10").innerHTML = "concat() demo : " + str1.concat(" ",str2);
+
+//method 11  :   trim()
+var str = "Preeti                   Mishra";
+document.getElementById("m11").innerHTML = "trim() demo : " + str.trim();
+
+//method 12  :   charAt()
+var str = "JAVASCRIPT";
+document.getElementById("m12").innerHTML = "charAt() demo : " + str.charAt(5);
+
+//method 13  :   charCodeAt()
+var str = "JAVASCRIPT";
+document.getElementById("m13").innerHTML = "charCodeAt() demo : " + str.charCodeAt(0);//return unicode
+
+//method 14  :   split()
+var str = "11,12,13,14,15,16";
+var sp = str.split(",");
+document.getElementById("m14").innerHTML = "split() demo : " + sp[3];
+
+</script>
+
+</body>
+</html>
